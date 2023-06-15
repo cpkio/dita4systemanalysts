@@ -7,7 +7,7 @@
         <fig>
             <title>Исходный текст диаграммы</title>
             <codeblock xml:space="preserve" expanse="column">
-            <coderef href="../../other/sourcecode.plantuml"/>
+            <coderef keyref="plantuml_db_desc"/>
         </codeblock></fig>
     </conbody>
 </concept>
