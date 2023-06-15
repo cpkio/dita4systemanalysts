@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="methods-description">
+    <title>Описание методов сервиса <keyword keyref="service-name"/></title>
+    <body>
+        <p>OpenAPI-спецификацию методов сервиса можно получить по адресу <tt><ph keyref="swagger-link"/></tt>.</p>
+    </body>
+</topic>

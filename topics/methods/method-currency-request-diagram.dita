@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="method-currency-request-diagram">
+    <title>Диаграмма последовательности метода</title>
+    <refbody>
+        <table id="table_ztj_w1t_5xb" frame="none">
+            <title>Поля запроса</title>
+            <tgroup cols="5">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <colspec colnum="4" colname="col4"/>
+                <colspec colnum="5" colname="col5"/>
+                <thead>
+                    <row>
+                        <entry>Название поля</entry>
+                        <entry>Куда передавать</entry>
+                        <entry>Обязательно</entry>
+                        <entry>Тип</entry>
+                        <entry>Описание</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>название</entry>
+                        <entry>query</entry>
+                        <entry>да</entry>
+                        <entry>string</entry>
+                        <entry>Описание</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table id="table_ufg_bbt_5xb" frame="none">
+            <title>Поля ответа</title>
+            <tgroup cols="4">
+                <colspec colname="c1" colnum="1" colwidth="3*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="c3" colnum="3" colwidth="2*"/>
+                <colspec colname="c4" colnum="4" colwidth="3*"/>
+                <thead>
+                    <row>
+                        <entry>Название поля</entry>
+                        <entry>Обязательно</entry>
+                        <entry>Тип</entry>
+                        <entry>Описание</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>result</entry>
+                        <entry>да</entry>
+                        <entry>object</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry charoff="10" align="char" char=" "> timestamp</entry>
+                        <entry>да</entry>
+                        <entry>string($date-time)</entry>
+                        <entry>Дата, время получения ответа</entry>
+                    </row>
+                    <row>
+                        <entry charoff="10" align="char" char=" "> status</entry>
+                        <entry>да</entry>
+                        <entry>integer($int32)</entry>
+                        <entry>HTTP код ответа</entry>
+                    </row>
+                    <row>
+                        <entry charoff="10" align="char" char=" "> service</entry>
+                        <entry>да</entry>
+                        <entry>string</entry>
+                        <entry>Название сервиса вернувшего ответ</entry>
+                    </row>
+                    <row>
+                        <entry charoff="10" align="char" char=" "> code</entry>
+                        <entry>да</entry>
+                        <entry>string</entry>
+                        <entry>Внутренний код ответа</entry>
+                    </row>
+                    <row>
+                        <entry charoff="10" align="char" char=" "> message</entry>
+                        <entry>да</entry>
+                        <entry>string</entry>
+                        <entry>Текстовое описание результата выполнения операции</entry>
+                    </row>
+                    <row>
+                        <entry>data</entry>
+                        <entry>да</entry>
+                        <entry>array</entry>
+                        <entry>Список результатов поиска</entry>
+                    </row>
+                    <row>
+                        <entry charoff="10" align="char" char=" "> {}</entry>
+                        <entry>нет</entry>
+                        <entry>object</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry charoff="20" align="char" char=" ">  название</entry>
+                        <entry>нет</entry>
+                        <entry>string</entry>
+                        <entry>Описание</entry>
+                    </row>
+                    <row>
+                        <entry charoff="20" align="char" char=" ">  название</entry>
+                        <entry>нет</entry>
+                        <entry>array</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry charoff="30" align="char" char=" ">   {}</entry>
+                        <entry>нет</entry>
+                        <entry>object</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry charoff="40" align="char" char=" ">    название</entry>
+                        <entry>нет</entry>
+                        <entry>integer($int32)</entry>
+                        <entry>Описание</entry>
+                    </row>
+                    <row>
+                        <entry charoff="40" align="char" char=" ">    название</entry>
+                        <entry>нет</entry>
+                        <entry>string</entry>
+                        <entry>Описание</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table id="table_msc_5ct_5xb" frame="none">
+            <title>Сопоставление (mapping) атрибутов метода <ph conkeyref="get-api-rate/get-api-rate-text"/> с полями таблицы <codeph
+                conkeyref="res_text/db-table-name"/></title>
+            <tgroup cols="5">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="c3" colnum="3" colwidth="1*"/>
+                <colspec colname="c4" colnum="4" colwidth="1*"/>
+                <colspec colname="c5" colnum="5" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Атрибуты метода</entry>
+                        <entry>Тип данных</entry>
+                        <entry>Пример заполнения</entry>
+                        <entry>Данные в БД</entry>
+                        <entry>Тип данных</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>data</entry>
+                        <entry>array</entry>
+                        <entry>---</entry>
+                        <entry>---</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry charoff="10" align="char" char=" "> {}</entry>
+                        <entry>array</entry>
+                        <entry>---</entry>
+                        <entry>phones</entry>
+                        <entry>table</entry>
+                    </row>
+                    <row>
+                        <entry charoff="20" align="char" char=" ">  phone</entry>
+                        <entry>string</entry>
+                        <entry>"8 (800) 775-88-88"</entry>
+                        <entry>phones.phone</entry>
+                        <entry>string</entry>
+                    </row>
+                    <row>
+                        <entry charoff="20" align="char" char=" ">  isMain</entry>
+                        <entry>boolean</entry>
+                        <entry>true</entry>
+                        <entry>phones.is_main</entry>
+                        <entry>boolean</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

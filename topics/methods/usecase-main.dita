@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="usecase-main">
+    <title>Основной сценарий</title>
+    <body>
+        <ol id="ol_yc3_ylt_5xb">
+            <li>Получен вызов метода <ph conkeyref="get-api-rate/get-api-rate-text"/></li>
+            <li>Сервис получает внутренний курс валют из таблицы <codeph
+                    conkeyref="res_text/db-table-name"/><ol>
+                    <li>Если в запросе был передан параметр currency (код запрашиваемой валюты),
+                        тогда запрос строится с отбором по данной валюте<ol>
+                            <li>Из таблицы <codeph conkeyref="res_text/db-table-name"/> получаем
+                                данные по валюте</li>
+                        </ol>
+                    </li>
+                    <li>Если в запросе не передается параметр currency, получаем курсы всех
+                        валют</li>
+                </ol>
+            </li>
+            <li>Сервис получает курсы ЦБ РФ из таблицы <ph
+                    conkeyref="get-api-rate/get-api-rate-text"/><ol>
+                    <li>Если в запросе был передан параметр currency (код запрашиваемой валюты),
+                        тогда запрос строится с отбором по данной валюте</li>
+                </ol>
+            </li>
+            <li>Сервис формирует ответ для передачи фронту</li>
+        </ol>
+
+    </body>
+</topic>

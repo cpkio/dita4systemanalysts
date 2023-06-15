@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="usecase-alt">
+    <title>Альтернативный сценарий</title>
+    <body>
+        <ol id="ol_inj_wmt_5xb">
+            <li>
+                <p>Неверно указан параметр валюты</p>
+                <p>Сервис отдает в ответе <codeph>status = 400</codeph>, <codeph>message = "Указано
+                        недопустимое значение в параметре валюты"</codeph>. В ответе <tt>data</tt>
+                    не возвращается.</p>
+            </li>
+            <li>
+                <p>Произошла ошибка на стороне конечной системы</p>
+                <p>Сервис отдает в ответе <codeph>status = 500</codeph>, <codeph>message = "Получена
+                        ошибка от конечной системы"</codeph>. В ответе data не возвращается</p>
+            </li>
+            <li>
+                <p>Истек таймаут ожидания ответа от конечной системы</p>
+                <p>Сервис отдает в ответе <codeph>status = 500</codeph>, <codeph>message = "Истек
+                        таймаут ожидания ответа от конечной системы. Возможно повторный вызов решит
+                        проблему"</codeph>. В ответе data не возвращается</p>
+            </li>
+        </ol>
+    </body>
+</topic>

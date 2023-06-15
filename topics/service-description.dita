@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="service-description">
+    <title>Общее описание сервиса <keyword keyref="service-name"/></title>
+    <shortdesc>Сервис <keyword keyref="service-name"/> используется для работы с курсами валют Банка и ЦБ
+        РФ.</shortdesc>
+    <conbody>
+        <p>Сервис <keyword keyref="service-name"/> предоставляет возможности:<ul id="ul_fzy_vts_5xb">
+                <li>запрос актуальных курсов</li>
+                <li>наполнение витрины актуальных курсов</li>
+                <li>прочее.</li>
+        </ul></p>
+        <section>
+            <title>Краткое описание архитектуры решения</title>
+            <p>Сервис <keyword keyref="service-name"/> получает данные из…. Хранит данные в БД
+                PostgreSQL. Кэш хранит в Redis. А еще к нему подключены… и т.д.</p>
+        </section>
+    </conbody>
+</concept>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="db-description">
+    <title>Описание базы данных</title>
+    <conbody>
+        <p><fig conkeyref="res_images/db-scheme"/></p>
+        <fig>
+            <title>Исходный текст диаграммы</title>
+            <codeblock xml:space="preserve" expanse="column">
+            <coderef href="../../other/sourcecode.plantuml"/>
+        </codeblock></fig>
+    </conbody>
+</concept>

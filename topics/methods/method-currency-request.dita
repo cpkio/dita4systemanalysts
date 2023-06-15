@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="method-currency-request">
+    <title>Запрос на получение актуальных курсов валюты: <ph id="get-api-rate-text"><b>GET</b> <codeph>/api/v1/rate</codeph></ph></title>
+    <body>
+        <p>Краткое описание метода…</p>
+    </body>
+</topic>

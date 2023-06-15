@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="method-currency-request-usecase">
+    <title>Сценарии использования метода</title>
+    <shortdesc>Краткое описание сценариев</shortdesc>
+    <taskbody>
+        <prereq id="prereq_qkp_q2t_5xb">Предварительные условия…</prereq>
+        <context id="context_emn_v2t_5xb"> Описывается состояние системы и «роль» участника
+            процесса, вызвавшего данный метод </context>
+    </taskbody>
+</task>

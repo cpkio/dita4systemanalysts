@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="service-architecture">
+    <title>Архитектура решения</title>
+    <shortdesc>Решение является совокупностью…</shortdesc>
+    <conbody>
+        <p>
+            <fig conkeyref="res_images/arch"/>
+        </p>
+    </conbody>
+</concept>

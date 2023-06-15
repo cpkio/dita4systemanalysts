@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="resources-images">
+    <title>Изображения</title>
+    <body>
+        <p>
+            <fig id="arch">
+                <title>Архитектурная схема</title>
+                <image href="images/dummy2.png" align="center" width="32em" placement="break"/>
+            </fig>
+            <fig id="db-scheme">
+                <title>Схема базы данных</title>
+                <image href="images/dummy2.png" align="center" width="32em" placement="break"/>
+            </fig>
+            <fig id="seqdiag-api-get-rate">
+                <title>Диаграмма последовательности метода <ph conkeyref="get-api-rate/get-api-rate-text"/></title>
+                <image href="images/dummy2.png" align="center" width="32em" placement="break"/>
+            </fig>
+        </p>
+    </body>
+</topic>

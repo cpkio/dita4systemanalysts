@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="ru">
+    <title>Сервис <ph keyref="service-name"/></title>
+    <topicmeta>
+        <author>Иванов Иван Иванович</author>
+        <critdates>
+            <created date="2023-06-01"/>
+            <revised modified="2023-06-02"/>
+            <revised modified="2023-06-04"/>
+        </critdates>
+        <change-historylist/>
+        <othermeta name="status" content="Черновик"/>
+    </topicmeta>
+    <keydef keys="service-name">
+        <topicmeta>
+            <keywords>
+                <keyword>«Микросервис»</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <keydef keys="db-table-name">
+        <topicmeta>
+            <keywords>
+                <keyword>some_random_dbtable</keyword>
+            </keywords>
+        </topicmeta>
+    </keydef>
+    <topicref keys="swagger-link">
+        <topicmeta>
+            <linktext>http://example.com/swagger/service.yaml</linktext>
+        </topicmeta>
+    </topicref>
+    <topicref navtitle="Общее описание сервиса" href="topics/service-description.dita"/>
+    <topicref navtitle="Архитектура решения" href="topics/service-architecture.dita"/>
+    <topicref navtitle="Описание базы данных" href="topics/database/db-description.dita">
+        <topicref navtitle="Описание таблиц" href="topics/database/db-tables-description.dita"/>
+    </topicref>
+    <topicref navtitle="Описание реализуемых методов" href="topics/methods/methods-description.dita">
+        <!-- topicref navtitle="Swagger для методов сервиса" href="topics/methods/methods-swagger.dita"/ -->
+        <topicref navtitle="Запрос на получение актуальных курсов валюты: GET /api/v1/rate"
+            href="topics/methods/method-currency-request.dita" keys="get-api-rate">
+            <topicref navtitle="Диаграмма последовательности метода"
+                href="topics/methods/method-currency-request-diagram.dita"/>
+            <topicref navtitle="Сценарий использования для метода"
+                href="topics/methods/method-currency-request-usecase.dita" chunk="to-navigation">
+                <topicref href="topics/methods/usecase-main.dita"/>
+                <topicref href="topics/methods/usecase-alt.dita"/>
+            </topicref>
+        </topicref>
+    </topicref>
+    <topicref navtitle="Коды ошибок, используемые в сервисе" href="topics/error-codes.dita"/>
+    <topicref keys="res_images" href="resources-images.dita" processing-role="resource-only"/>
+    <topicref keys="res_text" href="resources-text.dita" processing-role="resource-only"/>
+    <topicref keys="plantuml_db_desc" href="other/sourcecode.plantuml" processing-role="resource-only" format="plain"/>
+</map>

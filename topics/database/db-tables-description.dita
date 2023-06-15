@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="db-tables-description">
+    <title>Описание таблиц базы данных</title>
+    <body>
+        <p>
+            <table id="table_g5r_vws_5xb" frame="none">
+                <title>Таблицы базы данных сервиса <keyword keyref="service-name"/></title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="3*"/>
+                    <colspec colname="c3" colnum="3" colwidth="3*"/>
+                    <colspec colname="c4" colnum="4" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Поле</entry>
+                            <entry>Описание</entry>
+                            <entry>Комментарий к заполнению</entry>
+                            <entry>Пример</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>id</entry>
+                            <entry>Идентификатор записи в таблице</entry>
+                            <entry>Формируется автоматически при добавлении записи в
+                                таблицу</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>num_code</entry>
+                            <entry>Цифровой код валюты согласно ISO</entry>
+                            <entry>Заполняется как цифровой код ISO согласно данным ЦБ
+                                РФ</entry>
+                            <entry>036</entry>
+                        </row>
+                        <row>
+                            <entry>char_code</entry>
+                            <entry>Буквенный код валюты согласно ISO</entry>
+                            <entry>Заполняется как буквенный код ISO согласно данным ЦБ
+                                РФ</entry>
+                            <entry>AUD</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </body>
+</topic>
