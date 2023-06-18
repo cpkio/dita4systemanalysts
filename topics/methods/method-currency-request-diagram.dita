@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<reference id="method-currency-request-diagram">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Reference//EN" "topic.dtd">
+<topic id="method-currency-request-diagram">
     <title>Диаграмма последовательности метода</title>
-    <refbody>
+    <body>
+        <fig id="seqdiag-api-get-replace"/>
         <table id="table_ztj_w1t_5xb" frame="none">
             <title>Поля запроса</title>
             <tgroup cols="5">
@@ -178,5 +179,5 @@
                 </tbody>
             </tgroup>
         </table>
-    </refbody>
-</reference>
+    </body>
+</topic>

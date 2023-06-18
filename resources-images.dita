@@ -12,7 +12,7 @@
                 <title>Схема базы данных</title>
                 <image href="images/dummy2.png" align="center" width="32em" placement="break"/>
             </fig>
-            <fig id="seqdiag-api-get-rate">
+            <fig id="seqdiag-api-get-rate" conaction="pushreplace" conref="topics/methods/method-currency-request-diagram.dita#method-currency-request-diagram/seqdiag-api-get-replace">
                 <title>Диаграмма последовательности метода <ph conkeyref="get-api-rate/get-api-rate-text"/></title>
                 <image href="images/dummy2.png" align="center" width="32em" placement="break"/>
             </fig>
