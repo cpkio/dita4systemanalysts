@@ -9,7 +9,13 @@
             <revised modified="2023-06-02"/>
             <revised modified="2023-06-04"/>
         </critdates>
-        <change-historylist/>
+        <change-historylist>
+            <change-item>
+                <change-person>Иванов И.</change-person>
+                <change-completed>2023-06-18</change-completed>
+                <change-summary>Добавлена таблица связей</change-summary>
+            </change-item>
+        </change-historylist>
         <othermeta name="status" content="Черновик"/>
     </topicmeta>
     <keydef keys="service-name">
@@ -53,4 +59,22 @@
     <topicref keys="res_images" href="resources-images.dita" processing-role="resource-only"/>
     <topicref keys="res_text" href="resources-text.dita" processing-role="resource-only"/>
     <topicref keys="plantuml_db_desc" href="other/sourcecode.plantuml" processing-role="resource-only" format="plain"/>
+    <reltable>
+        <relheader>
+            <relcolspec type="topic"/>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+        <relrow>
+            <relcell>
+                <topicref href="topics/methods/method-currency-request.dita"/>
+            </relcell>
+            <relcell/>
+            <relcell/>
+            <relcell>
+                <topicref href="topics/error-codes.dita"/>
+            </relcell>
+        </relrow>
+    </reltable>
 </map>

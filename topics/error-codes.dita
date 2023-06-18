@@ -3,6 +3,15 @@
 <reference id="error-codes">
     <title>Коды ошибок сервиса</title>
     <shortdesc></shortdesc>
+    <prolog>
+        <change-historylist>
+            <change-item>
+                <change-person>Иванов И.</change-person>
+                <change-completed>2023-06-18</change-completed>
+                <change-summary>Мелкие правки</change-summary>
+            </change-item>
+        </change-historylist>
+    </prolog>
     <refbody>
         <table id="table_crc_f2t_5xb" frame="none">
             <title>Коды ошибок, используемые в сервисе <keyword keyref="service-name"/></title>
@@ -12,29 +21,29 @@
                 <colspec colname="c3" colnum="3" colwidth="9*"/>
                 <thead>
                     <row>
-                        <entry dir="ltr">status</entry>
-                        <entry dir="ltr">message</entry>
-                        <entry dir="ltr">Когда возвращаем</entry>
+                        <entry>status</entry>
+                        <entry>message</entry>
+                        <entry>Когда возвращаем</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry dir="ltr">200</entry>
-                        <entry dir="ltr">ОК</entry>
-                        <entry dir="ltr">GET запрос вернул все запрашиваемые данные в актуальном
+                        <entry>200</entry>
+                        <entry>ОК</entry>
+                        <entry>GET запрос вернул все запрашиваемые данные в актуальном
                             виде</entry>
                     </row>
                     <row>
-                        <entry dir="ltr">500</entry>
-                        <entry dir="ltr">Сервис недоступен</entry>
-                        <entry dir="ltr">Непредвиденная ошибка на сервисе. Также данную ошибку
+                        <entry>500</entry>
+                        <entry>Сервис недоступен</entry>
+                        <entry>Непредвиденная ошибка на сервисе. Также данную ошибку
                             вернем, если сервис <keyword keyref="service-name"/> и ЦБ РФ вернут 500 ошибку на
                             запрос</entry>
                     </row>
                     <row>
-                        <entry dir="ltr">400</entry>
-                        <entry dir="ltr">Неверный параметр в запросе</entry>
-                        <entry dir="ltr">В запросе GET указаны неизвестные параметры или в параметре
+                        <entry>400</entry>
+                        <entry>Неверный параметр в запросе</entry>
+                        <entry>В запросе GET указаны неизвестные параметры или в параметре
                             currency указаны значения отличные от тех, что определены
                             методом</entry>
                     </row>
